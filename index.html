@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archipel Quant — L'IA qui forge vos stratégies de trading</title>
+  <meta name="description" content="Décrivez votre style de trading en langage naturel. L'IA optimise, backteste et exporte un robot MetaTrader 5 prêt à trader. Essayez gratuitement.">
+  <meta name="keywords" content="trading algorithmique, IA trading, MetaTrader 5, backtest, optimisation, prop firm, FTMO, stratégie trading, algo trading">
+  <meta name="author" content="Archipel SRL">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Archipel Quant — L'IA qui forge vos stratégies de trading">
+  <meta property="og:description" content="Décrivez votre style en langage naturel. L'IA optimise et exporte un robot MetaTrader 5 prêt à trader.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://archipelsrl.github.io/AlgoPrompt/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">⚡</div>
+        Archipel Quant
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Fonctionnalités</a></li>
+        <li><a href="#how-it-works">Comment ça marche</a></li>
+        <li><a href="#pricing">Tarifs</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="https://algoprompt-main-archipelsrl.streamlit.app" class="btn btn-primary btn-sm" target="_blank">Essayer Gratuitement</a></li>
+      </ul>
+      <div class="nav-hamburger" id="navHamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          Propulsé par l'IA Gemini
+        </div>
+        <h1>
+          L'IA qui <span class="text-gradient">forge</span> vos stratégies de trading.
+        </h1>
+        <p>
+          Décrivez votre style en langage naturel. L'IA optimise des milliers de combinaisons, backteste sur données réelles, et exporte un robot MetaTrader&nbsp;5 prêt à trader.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://algoprompt-main-archipelsrl.streamlit.app" class="btn btn-primary btn-lg" target="_blank">
+            Essayer Gratuitement →
+          </a>
+          <a href="#how-it-works" class="btn btn-secondary btn-lg">
+            Voir comment ça marche
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-value">15+</div>
+            <div class="hero-stat-label">Indicateurs</div>
+          </div>
+          <div>
+            <div class="hero-stat-value">∞</div>
+            <div class="hero-stat-label">Combinaisons</div>
+          </div>
+          <div>
+            <div class="hero-stat-value">1-clic</div>
+            <div class="hero-stat-label">Export MT5</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-glow"></div>
+        <!-- Placeholder for a screenshot — replace with actual app screenshot -->
+        <div style="
+          aspect-ratio: 16/10;
+          border-radius: 20px;
+          border: 1px solid rgba(255,255,255,0.08);
+          background: linear-gradient(135deg, rgba(0,212,255,0.05), rgba(124,58,237,0.05));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.1rem;
+          color: var(--text-muted);
+          backdrop-filter: blur(10px);
+          box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 40px rgba(0,212,255,0.1);
+          padding: 40px;
+          text-align: center;
+          line-height: 1.6;
+        ">
+          <div>
+            <div style="font-size: 3rem; margin-bottom: 16px;">🧠</div>
+            <div style="color: var(--text-secondary); font-weight: 600;">Interface AlgoPrompt</div>
+            <div style="font-size: 0.85rem; margin-top: 8px;">Remplacez par une capture d'écran de l'application</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FEATURES ═══════ -->
+  <section id="features">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Fonctionnalités</span>
+        <h2 class="section-title">Trois piliers. <span class="text-gradient">Zéro compromis.</span></h2>
+        <p class="section-subtitle mx-auto">
+          Tout ce dont un trader algorithmique a besoin, intégré dans une seule plateforme.
+        </p>
+      </div>
+      <div class="features-grid reveal-stagger">
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>AlgoPrompt™</h3>
+          <p>Décrivez votre stratégie en français : <em>"Du swing trading sur le Gold en H1 avec RSI et Bollinger"</em>. L'IA configure tout automatiquement.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Optimisation IA</h3>
+          <p>Optuna explore des milliers de combinaisons de paramètres en parallèle. GPU CUDA disponible pour les calculs intensifs. Score Archipel sur 100.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Export MetaTrader 5</h3>
+          <p>Exportez votre stratégie optimisée en fichier <code>.set</code> compatible avec le Master EA universel. Prêt à trader en 1 clic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ HOW IT WORKS ═══════ -->
+  <section id="how-it-works" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Processus</span>
+        <h2 class="section-title">De l'idée au <span class="text-gradient">robot en 4 étapes</span></h2>
+        <p class="section-subtitle mx-auto">
+          Pas besoin de coder. L'IA fait le travail lourd.
+        </p>
+      </div>
+      <div class="steps-grid reveal-stagger">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Décrivez</h3>
+          <p>Exprimez votre stratégie en langage naturel via AlgoPrompt. L'IA comprend votre intention.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Optimisez</h3>
+          <p>L'IA lance des centaines d'essais sur données historiques réelles (ticks Dukascopy).</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Validez</h3>
+          <p>Le Panthéon stress-teste votre stratégie : Monte Carlo, Walk-Forward, Score Archipel.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h3>Exportez</h3>
+          <p>Générez un fichier <code>.set</code> et chargez-le dans MetaTrader 5. C'est parti.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PRICING ═══════ -->
+  <section id="pricing">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">Tarifs</span>
+        <h2 class="section-title">Simple. <span class="text-gradient">Transparent.</span></h2>
+        <p class="section-subtitle mx-auto">
+          Payez uniquement pour le calcul que vous consommez. Les crédits non utilisés s'accumulent.
+        </p>
+      </div>
+      <div class="pricing-grid reveal-stagger">
+
+        <!-- Free -->
+        <div class="pricing-card">
+          <div class="pricing-tier">Free</div>
+          <div class="pricing-price">$0</div>
+          <div class="pricing-credits">50 ACC offerts (one-shot)</div>
+          <ul class="pricing-features">
+            <li>Accès CPU Standard</li>
+            <li>Dataset démo 3 mois</li>
+            <li>AlgoPrompt basique</li>
+            <li class="disabled">GPU</li>
+            <li class="disabled">Comptes MT5</li>
+          </ul>
+          <a href="https://algoprompt-main-archipelsrl.streamlit.app" class="btn btn-secondary" target="_blank">Commencer</a>
+        </div>
+
+        <!-- Starter -->
+        <div class="pricing-card">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-price">$29 <span>/mois</span></div>
+          <div class="pricing-credits">300 ACC / mois (rollover)</div>
+          <ul class="pricing-features">
+            <li>CPU + GPU T4</li>
+            <li>Données complètes</li>
+            <li>AlgoPrompt avancé</li>
+            <li>1 compte MT5</li>
+            <li class="disabled">Deep Search</li>
+          </ul>
+          <a href="#" class="btn btn-secondary">S'abonner</a>
+        </div>
+
+        <!-- Pro (Featured) -->
+        <div class="pricing-card featured">
+          <div class="pricing-popular">Le plus populaire</div>
+          <div class="pricing-tier">Pro</div>
+          <div class="pricing-price">$79 <span>/mois</span></div>
+          <div class="pricing-credits">1 500 ACC / mois (rollover)</div>
+          <ul class="pricing-features">
+            <li>CPU + GPU T4 + L4</li>
+            <li>Données complètes</li>
+            <li>Comptes MT5 illimités</li>
+            <li>Profils Prop Firm (FTMO…)</li>
+            <li class="disabled">Deep Search</li>
+          </ul>
+          <a href="#" class="btn btn-primary">S'abonner</a>
+        </div>
+
+        <!-- Elite -->
+        <div class="pricing-card">
+          <div class="pricing-tier">Elite</div>
+          <div class="pricing-price">$199 <span>/mois</span></div>
+          <div class="pricing-credits">5 000 ACC / mois (rollover)</div>
+          <ul class="pricing-features">
+            <li>Tous les GPU (incl. A100)</li>
+            <li>Comptes MT5 illimités</li>
+            <li>Deep Search IA</li>
+            <li>Support prioritaire</li>
+            <li>Score Archipel Pro</li>
+          </ul>
+          <a href="#" class="btn btn-secondary">S'abonner</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FAQ ═══════ -->
+  <section id="faq" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Questions <span class="text-gradient">fréquentes</span></h2>
+      </div>
+      <div class="faq-list reveal">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Qu'est-ce qu'un ACC (Archipel Compute Credit) ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Un ACC correspond à 1 minute de calcul sur serveur CPU standard. Les GPU consomment plus de crédits par minute (4 ACC/min pour un T4, 15 ACC/min pour un A100). Vos crédits mensuels s'accumulent — vous ne perdez jamais ce que vous avez payé.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Est-ce compatible avec les challenges Prop Firm (FTMO, Funded Next) ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Oui ! À partir du tier Pro, vous avez accès aux Profils Prop Firm intégrés. L'IA respecte automatiquement les contraintes de drawdown (5-10%), d'objectif de profit, et de durée de challenge lors de l'optimisation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Ai-je besoin de savoir coder ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolument pas. C'est toute la promesse d'AlgoPrompt : vous décrivez votre stratégie en français (ou en anglais), l'IA configure les indicateurs, optimise les paramètres et exporte un fichier prêt à l'emploi pour MetaTrader 5.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Que se passe-t-il si je n'utilise pas tous mes crédits ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ils s'accumulent (rollover). Si vous avez 300 ACC/mois et que vous n'en utilisez que 100, les 200 restants s'ajoutent au mois suivant. Les crédits achetés en recharge (Boost Packs) n'expirent jamais non plus.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Quel est le Score Archipel ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>C'est notre note propriétaire sur 100 qui combine Walk-Forward Consistency, Monte Carlo Survival Rate, Profit Factor OOS, Sharpe Ratio et Max Drawdown. Un seul chiffre pour évaluer la robustesse d'une stratégie.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Puis-je annuler mon abonnement à tout moment ?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Oui, sans engagement. Si vous annulez, votre accès reste actif jusqu'à la fin de la période payée. Vos crédits accumulés restent disponibles. Seul le robot MetaTrader (Master EA) cessera de fonctionner à l'expiration de l'abonnement.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CTA ═══════ -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2>Prêt à forger votre <span class="text-gradient">première stratégie</span> ?</h2>
+        <p>50 crédits offerts. Aucune carte bancaire requise.</p>
+        <a href="https://algoprompt-main-archipelsrl.streamlit.app" class="btn btn-primary btn-lg" target="_blank">
+          Créer mon compte gratuitement →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          © 2026 Archipel SRL. Tous droits réservés.
+        </div>
+        <ul class="footer-links">
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="https://github.com/ArchipelSRL/AlgoPrompt" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
