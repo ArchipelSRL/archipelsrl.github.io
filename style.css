@@ -167,6 +167,9 @@ section {
   z-index: 1000;
   padding: 16px 0;
   transition: var(--transition);
+  background: rgba(6, 6, 13, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .navbar.scrolled {
@@ -300,6 +303,22 @@ section {
 .btn-sm {
   padding: 10px 24px;
   font-size: 0.85rem;
+}
+
+/* Navbar CTA — high contrast */
+.nav-links .btn-primary {
+  background: #00E5FF;
+  color: #0a0a14;
+  font-weight: 700;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+  letter-spacing: 0.02em;
+}
+
+.nav-links .btn-primary:hover {
+  background: #33EEFF;
+  color: #0a0a14;
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
+  transform: translateY(-2px);
 }
 
 .btn-lg {
